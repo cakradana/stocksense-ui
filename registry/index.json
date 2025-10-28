@@ -1,0 +1,8 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "name": "stocksense-ui",
+  "description": "StockSense custom component registry built on shadcn/ui",
+  "url": "https://github.com/unifluxid/stocksense-ui",
+  "type": "registry:ui",
+  "style": "default"
+}
