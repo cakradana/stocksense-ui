@@ -7,11 +7,13 @@ A custom component registry built on [shadcn/ui](https://ui.shadcn.com) for Stoc
 ### Using in Your Project
 
 1. **Install the Shadcn CLI** (if not already installed):
+
 ```bash
 npm install -D @shadcn/ui
 ```
 
 2. **Configure your project** to use this registry by updating `components.json`:
+
 ```json
 {
   "registryUrl": "https://raw.githubusercontent.com/unifluxid/stocksense-ui/main/registry"
@@ -19,6 +21,7 @@ npm install -D @shadcn/ui
 ```
 
 3. **Add components** from this registry:
+
 ```bash
 npx shadcn@latest add button
 ```
@@ -59,10 +62,12 @@ Components use CSS variables for theming. You can customize the theme by modifyi
 ### Component Structure
 
 Each component requires:
+
 - **Component file** (`.tsx`) - The actual React component
 - **Config file** (`.json`) - Metadata including dependencies
 
 Example config structure:
+
 ```json
 {
   "name": "component-name",
@@ -81,6 +86,7 @@ Example config structure:
 ## 🔗 Usage in Projects
 
 This registry works with:
+
 - ✅ Vite + React
 - ✅ Next.js (App Router & Pages Router)
 - ✅ Remix
@@ -97,6 +103,7 @@ This is a private registry for StockSense projects. If you're part of the team a
 ---
 
 **Note:** Make sure your project has the required dependencies installed:
+
 - `tailwindcss`
 - `class-variance-authority`
 - `clsx`

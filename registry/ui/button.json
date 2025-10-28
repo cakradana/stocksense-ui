@@ -1,10 +1,7 @@
 {
   "name": "button",
   "type": "registry:ui",
-  "dependencies": [
-    "@radix-ui/react-slot",
-    "class-variance-authority"
-  ],
+  "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
   "registryDependencies": [],
   "files": [
     {
