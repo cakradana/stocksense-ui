@@ -1,0 +1,14 @@
+{
+  "name": "stocksense-ui",
+  "version": "1.0.0",
+  "description": "StockSense UI Component Registry",
+  "type": "module",
+  "scripts": {
+    "registry:build": "shadcn build",
+    "dev": "npx serve public -p 3001",
+    "preview": "npx serve public -p 3001"
+  },
+  "devDependencies": {
+    "shadcn": "canary"
+  }
+}

@@ -4,26 +4,40 @@ A custom component registry built on [shadcn/ui](https://ui.shadcn.com) for Stoc
 
 ## 🚀 Quick Start
 
-### Using in Your Project
+### Setting Up the Registry
 
-1. **Install the Shadcn CLI** (if not already installed):
-
-```bash
-npm install -D @shadcn/ui
-```
-
-2. **Configure your project** to use this registry by updating `components.json`:
-
-```json
-{
-  "registryUrl": "https://raw.githubusercontent.com/unifluxid/stocksense-ui/main/registry"
-}
-```
-
-3. **Add components** from this registry:
+1. **Install dependencies**:
 
 ```bash
-npx shadcn@latest add button
+npm install
+```
+
+2. **Build the registry**:
+
+```bash
+npm run registry:build
+```
+
+This generates the registry JSON files in the `public/r` directory.
+
+3. **Serve the registry locally**:
+
+```bash
+npm run dev
+```
+
+The registry will be available at `http://localhost:3001/r/[NAME].json`.
+
+### Using Components in Your Project
+
+1. **Install components** from this registry:
+
+```bash
+# Local development
+npx shadcn@latest add http://localhost:3001/r/button.json
+
+# Or from published URL
+npx shadcn@latest add https://your-domain.com/r/button.json
 ```
 
 ## 📦 Available Components
