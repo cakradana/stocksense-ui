@@ -2,6 +2,13 @@
   {
     "name": "button",
     "type": "registry:ui",
-    "files": ["registry/ui/button.tsx"]
+    "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+    "registryDependencies": [],
+    "files": [
+      {
+        "path": "ui/button.tsx",
+        "type": "registry:ui"
+      }
+    ]
   }
 ]
